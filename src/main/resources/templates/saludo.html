@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>index test arquetipo</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Holaaa ' + ${name} + '!'" />
+    
+     <th:block th:each="row : ${list}">
+
+ 
+  <p th:text="${row.nombre}" />
+ </th:block>
+</body>
+</html>
